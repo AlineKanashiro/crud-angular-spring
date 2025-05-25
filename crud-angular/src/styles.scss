@@ -1,4 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// html {
+//   color-scheme: light dark;
+//   @include mat.theme((
+//     color: (
+//       primary: mat.$violet-palette,
+//       tertiary: mat.$orange-palette,
+//       use-system-variables: mat.$yellow-palette,
+//       // system-variables-prefix: mat.$red-palette,
+//       theme-type: dark,
+//     ),
+//     typography: (
+//       brand-family: 'Roboto, "Helvetica Neue", sans-serif'
+//     ),
+//     density: 0
+//   ));
+// }
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+html {
+  color-scheme: light dark;
+  @include mat.theme(
+    (
+      color: mat.$blue-palette,
+    )
+  );
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
